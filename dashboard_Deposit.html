@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- main -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Street FX</title>
+  <meta charset="utf-8">
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/candlebar.svg" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+</head>
+
+<body>
+  <!-- Dashboard -->
+  <!-- Topmenu -->
+  <div class="top-dashboard">
+    <div class="user-dashboard">
+      <div class="user-circle">
+        <i class="far fa-user user-dash"></i>
+      </div>
+      <div>
+        <h3>Tony GoFX</h3>
+        <h2>TonyTrader</h2>
+      </div>
+      <i class="fas fa-angle-down user-toggle"></i>
+    </div>
+    <div class="top-submenu-contain">
+      <div class="top-submenu">
+        <div class="user-circle">
+          <i class="far fa-user user-dash"></i>
+        </div>
+        <div>
+          <h3>Edit Profile</h3>
+        </div>
+      </div>
+      <div class="top-submenu">
+        <div class="user-circle">
+          <i class="fas fa-key user-dash"></i>
+        </div>
+        <div>
+          <h3>Change Password</h3>
+        </div>
+      </div>
+      <div class="top-submenu">
+        <div class="user-circle">
+          <i class="fas fa-sign-out-alt user-dash"></i>
+        </div>
+        <div>
+          <h3>Log out</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Topmenu -->
+  <!-- Sidemainmenu -->
+  <div class="main-menu-dashboard">
+    <div class="img-contain">
+      <img src="img/logo_eagle.svg">
+    </div>
+    <h1>Mainmenu</h1>
+    <ul>
+      <li onclick="location.href='dashboard_Profile.html';">
+        <i class="far fa-user-circle"></i>
+        <h2>Profile</h2>
+      </li>
+      <li onclick="location.href='dashboard_Deposit.html';">
+        <i class="fas fa-angle-double-down"></i>
+        <h2>Deposit</h2>
+      </li>
+      <li onclick="location.href='dashboard_Withdraw.html';">
+        <i class="fas fa-angle-double-up"></i>
+        <h2>Withdraw</h2>
+      </li>
+      <li onclick="location.href='dashboard_Transaction.html';">
+        <i class="fas fa-money-check-alt"></i>
+        <h2>Transaction</h2>
+      </li>
+      <li onclick="location.href='dashboard_Tradingaccount.html';">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h2>Trading Account</h2>
+      </li>
+      <li onclick="location.href='dashboard_Expertadvisor.html';">
+        <i class="fas fa-robot"></i>
+        <h2>Expert Advisor</h2>
+      </li>
+      <li onclick="location.href='dashboard_Copytrade.html';">
+        <i class="fas fa-user-tie"></i>
+        <h2>CopyTrade</h2>
+      </li>
+      <li onclick="location.href='index.html';">
+        <i class="fas fa-sign-out-alt"></i>
+        <h2>Logout</h2>
+      </li>
+    </ul>
+  </div>
+  <!-- end of Sidemainmenu -->
+
+  <!-- Deposit -->
+  <section class="dashboard-contain">
+    <div class="dashboard-content">
+      <h1>Deposit</h1>
+      <div class="deposit-contain">
+        <div class="circle-contain depoisit-circle">
+          <i class="fas fa-angle-double-down"></i>
+        </div>
+        <h2>Deposit-Rate</h2>
+        <h3 id="deposit-rate">31.64฿ = 1$</h3>
+      </div>
+      <div class="deposit-contain">
+        <div class="circle-contain withdraw-circle">
+          <i class="fas fa-angle-double-up"></i>
+        </div>
+        <h2>Withdraw-Rate</h2>
+        <h3 id="withdraw-rate">1$ = 31.00฿</h3>
+      </div>
+      <div class="deposit-form-contain">
+        <div class="deposit-form-div">
+          <div class="deposit-account">
+            <h2>Deposit Bank Account</h2>
+            <h2>Siam Commercial Bank</h2>
+            <h2>Account number : 0812577609</h2>
+            <h2>Account name: Suriya Prathumta</h2>
+          </div>
+          <form class="depoisit-form" action="index.html" method="post">
+            <h3>โอนเงินจำนวน <span>0</span> บาท</h3>
+            <div class="img-deposit">
+              <img src="" alt="">
+            </div>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Please upload a .JPG .PNG .GIF file and not over 1 MB.</p>
+            <div>
+              <button class="form-clear-button" type="button" name="button">Clear Form</button>
+              <button class="form-deposit-button" type="button" name="button">Deposit</button>
+            </div>
+          </form>
+        </div>
+        <div class="deposit-rate-cal">
+          <h1>Specify amount</h1>
+          <div>
+            <input type="number" name="" value="0" placeholder="">
+            <p>$</p>
+          </div>
+          <h2>คำนวณเป็นเงินไทย</h2>
+          <h3><span id="deposit-cal-number">0</span> บาท</h3>
+          <h4>(จำนวนเงินที่ต้องโอน)</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Deposit -->
+
+  <!-- Dashboard -->
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/myscript.js"></script>
+
+  <!-- end of script -->
+</body>
+
+</html>

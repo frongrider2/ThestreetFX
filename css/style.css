@@ -1,0 +1,1464 @@
+/* defalt */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Kanit', sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #ffffff;
+}
+/* end of defalt */
+
+/* Homepage section */
+
+/* Navbar */
+.homepage-topnav{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: minmax(10rem,1fr) 5fr minmax(10rem,1fr);
+  margin-top: 1rem;
+}
+
+.homepage-topnav-first{
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10rem;
+}
+.homepage-topnav-first li:first-child{
+  margin-right: auto;
+}
+.homepage-topnav-first li{
+  padding: 0 2rem;
+}
+.homepage-topnav-img{
+  width: 15rem;
+}
+.homepage-topnav-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.homepage-topnav-first h1{
+  font-size: 1.6rem;
+}
+.btn-enquire{
+  width: 14rem;
+  color: #ffffff;
+  border-radius: 4rem;
+  border: none;
+  background-color: #f27217;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+}
+
+.btn-enquire:hover{
+  background-color: #ffffff;
+  color: #f27217;
+  border: 0.1rem solid #f27217;
+}
+.btn-enquire i{
+  margin-left: 0.5rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.homepage-topnav-second{
+  grid-column: 2 / 3;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+}
+.homepage-topnav-second li{
+  padding-right: 3rem;
+  padding-left: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.homepage-topnav-second li:hover{
+  background-color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+.homepage-topnav-second p{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* end of Navbar */
+
+/* Slider */
+.slider-img{
+  width: auto;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-slider1{
+  background-image: url(../img/slide1.jpg);
+}
+.home-slider2{
+  background-image: url(../img/slide2.jpg);
+}
+.home-slider3{
+  background-image: url(../img/slide3.jpg);
+}
+.home-slider-content{
+  background-color: rgb(0, 0, 0,0.4);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(20rem,min-content) 1fr minmax(50rem,min-content);
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.home-slider-content div{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.home-slider-content h1{
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.home-slider-content h2{
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: normal;
+}
+.home-slider-content button{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+/* end of Slider */
+/* About */
+.homepage-about{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0.5rem 0;
+}
+.homepage-about i{
+  font-size: 5rem;
+  color: #fff;
+}
+.homepage-about h1{
+  font-size: 2.2rem;
+  color: #fff;
+}
+.homepage-about h2{
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0 10%;
+  margin-top: 1.5rem;
+}
+.homepage-about-content{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.homepage-about-content1{
+  background-color: #f27217;
+}
+.homepage-about-content2{
+  background-color: #333333;
+}
+/* end of About */
+
+/* show ea */
+.homepage-showea{
+  width: 100%;
+  height: 50rem;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.homepage-showea-contain{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.8);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.homepage-showea-text{
+  margin-right: 15rem;
+}
+
+.homepage-showea h1{
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.homepage-showea h2{
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.showea-img{
+  width: 30rem;
+  transform: rotate(15deg);
+}
+
+.showea-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* end of show ea */
+
+/* Tools */
+.homepage-tools{
+  background-color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.homepage-tools h1{
+  font-size: 3.2rem;
+  color: #f27217;
+}
+.homepage-tools h2{
+  font-size: 1.8rem;
+  color: #000000;
+}
+.homepage-tools-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 15rem;
+  margin-top: 5rem;
+  grid-gap: 4rem;
+}
+.tool-contain h3{
+  color: #000000;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.tool-contain p{
+  color: #606060;
+  font-size: 2rem;
+}
+.tool-contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.2rem solid #ddd;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  transition: all 0.3s;
+  position: relative;
+}
+.tool-contain:hover{
+  border: 0.2rem solid #f27217;
+}
+.tools-circle{
+  width: 10rem;
+  height: 10rem;
+  border: 0.5rem solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.tool-contain i{
+  color: #f27217;
+  font-size: 4rem;
+}
+
+.tools-circle:hover{
+  border: 0.5rem solid #f27217;
+}
+
+.tool-contain h3::after{
+  content: "";
+  width: 80%;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  position: absolute;
+  background-color: #f27217;
+  left: 10%;
+
+}
+/* end of Tools */
+/* EA list */
+.Ealist{
+  background-color: #100e17;
+  padding: 2rem;
+}
+.Ealist h1{
+  font-size: 3.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.Eacard{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 260px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  align-items: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.6s ease-out;
+  margin: 0 auto;
+}
+.ea-img{
+  margin: 0.5rem;
+  width: 160px;
+}
+.ea-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.Ealist-container{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Ealist-container h2{
+  color: #f27217;
+  font-size: 2.4rem;
+}
+.Ealist-container h3{
+  color: #eee;
+  font-size: 1.8rem;
+}
+#Perform{
+  margin-top: 10px;
+}
+#Ea-info{
+  margin-top: 140px;
+}
+
+.Showmore-button{
+  width: 14rem;
+  color: #ffffff;
+  border-radius: 4rem;
+  border: 0.1rem solid #28abb9;
+  background-color: #28abb9;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  margin-top: 10px;
+}
+
+.Showmore-button:hover{
+  background-color: #ffffff;
+  color: #28abb9;
+  border: 0.1rem solid #28abb9;
+}
+
+.circle{
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  left: calc(50% - 70px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+.Performance-text{
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  opacity: 0.3;
+  transition: all 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+  width: 100%;
+}
+.Eacard:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+.Eacard:hover .Performance-text {
+  color: #f27217;
+  opacity: 1;
+}
+.Eacard:hover{
+  transform: translateY(-30px);
+}
+
+/* end of EA list */
+.Footer{
+  background-color: #161A26;
+  padding: 1rem 2rem 5rem 2rem;
+}
+.Footer-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+.footer-img{
+  width: 15rem;
+}
+.footer-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer-container h1{
+  font-size: 1.8rem;
+  color: #FAD131;
+  margin: 1rem;
+}
+.footer-container h2{
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 1rem;
+}
+.contact-us i{
+  margin: 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+.footer-container a{
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0.1rem;
+  outline: none;
+  text-decoration: none;
+}
+.last-container-footer{
+  justify-content: center;
+}
+.last-container-footer input{
+  font-size: 2rem;
+  outline: none;
+  height: 3rem;
+  padding-left: 4rem;
+  box-sizing: content-box;
+  border: none;
+  border-radius: 1rem;
+}
+.last-container-footer form{
+  position: relative;
+}
+.last-container-footer span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+.last-container-footer i{
+  font-size: 2.4rem;
+  color: #1f1f1f;
+  margin-left: 0.5rem;
+}
+.submit-btn{
+  position: absolute;
+  left: 0;
+  top: 4.5rem;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  width: 14rem;
+  color: #ffffff;
+  border-radius: 4rem;
+  border: none;
+  background-color: #f27217;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+}
+
+.submit-btn:hover{
+  background-color: #ffffff;
+  color: #f27217;
+  border: 0.1rem solid #f27217;
+}
+.Footer-contain:first-child::before{
+  content: "";
+  width: 95%;
+  height: 0.5rem;
+  background-color: #f0f0f0;
+  position: absolute;
+  border-radius: 1rem;
+  bottom: -1rem;
+  left: 2.5%;
+}
+.Footer-contain:first-child::after{
+  content: "TheStreetFX © 2020 all rights reserved";
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* end of Homepage section */
+
+
+/* Login page */
+.Login{
+ display: grid;
+ grid-template-columns: minmax(5rem, 1fr) 1fr minmax(5rem, 1fr);
+ margin-top: 5rem;
+
+
+}
+.login-contain{
+  padding: 3rem;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+}
+.login-contain h1{
+  color: #f27217;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-contain span{
+  font-size: 2.4rem;
+  color: #888888;
+}
+.login-form input:not(.login-form-checkbox) {
+  height: 4rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-form input:focus {
+  background-color: rgb(255, 202, 131);
+}
+.login-form-btn{
+  align-self: center;
+  width: 80%;
+  color: #ffffff;
+  border-radius: 4rem;
+  border: 0.1rem solid #f27217;
+  background-color: #f27217;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 2.4rem;
+  padding: 1rem 1rem;
+}
+
+.login-form-btn:hover{
+  background-color: #ffffff;
+  color: #f27217;
+  border: 0.1rem solid #f27217;
+}
+.remember-form{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.login-form label{
+  align-self: flex-start;
+}
+.remember-form label{
+  font-size: 1.8rem;
+  color: #888888;
+  margin-left: 1rem;
+}
+.remember-form a{
+  font-size: 1.8rem;
+  color: #888888;
+  text-decoration: none;
+}
+.login-form-checkbox{
+  width: 2rem;
+  height: 2rem;
+}
+.remember-form div{
+  display: flex;
+  align-items: center;
+}
+.footer-login{
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 0.2rem solid #888888;
+}
+.footer-login p{
+  font-size: 1.8rem;
+  color: #888888;
+}
+.footer-login a{
+  text-decoration: none;
+  color: #f27217;
+}
+/* end of Login page */
+
+/* Signup */
+.Signup{
+ display: grid;
+ grid-template-columns: minmax(5rem, 1fr) 3fr minmax(5rem, 1fr);
+ margin: 2.5rem 0;
+}
+.signup-contain{
+  padding: 3rem;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+}
+.signup-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.signup-form div{
+  display: flex;
+  flex-direction: column;
+}
+.signup-contain h1{
+  color: #f27217;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.signup-contain span{
+  font-size: 2.4rem;
+  color: #888888;
+}
+.signup-form input:not(.login-form-checkbox) {
+  height: 4rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.signup-form input:focus {
+  background-color: rgb(255, 202, 131);
+}
+.signup-form-btn{
+  grid-column: 1 / -1 ;
+  width: 80%;
+  color: #ffffff;
+  border-radius: 4rem;
+  border: 0.1rem solid #f27217;
+  background-color: #f27217;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 2.4rem;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+.signup-form-btn:hover{
+  background-color: #ffffff;
+  color: #f27217;
+  border: 0.1rem solid #f27217;
+}
+.remember-form{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.signup-form label{
+  align-self: flex-start;
+}
+.remember-form label{
+  font-size: 1.8rem;
+  color: #888888;
+  margin-left: 1rem;
+}
+.remember-form a{
+  font-size: 1.8rem;
+  color: #888888;
+  text-decoration: none;
+}
+.signup-form-checkbox{
+  width: 2rem;
+  height: 2rem;
+}
+.remember-form div{
+  display: flex;
+  align-items: center;
+}
+.footer-signup{
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 0.2rem solid #888888;
+}
+.footer-signup p{
+  font-size: 1.8rem;
+  color: #888888;
+  margin: 2rem;
+}
+.footer-a-1{
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 2.2rem;
+}
+.footer-a-2{
+  text-decoration: none;
+  color: #f27217;
+  font-size: 2.2rem;
+}
+/* end of Signup */
+
+
+/* Dashboard */
+.img-contain{
+  width: 15rem;
+  align-self: center;
+  margin: 2rem;
+}
+.img-contain img{
+  width: 100%;
+}
+.dashboard-contain{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+}
+.main-menu-dashboard{
+  width: 25rem;
+  height: 100vh;
+  position: fixed;
+  margin-left: 0;
+  margin-top: 0;
+  background-color: #161A26;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.main-menu-dashboard li{
+  display: grid;
+  height: 7rem;
+  grid-template-columns: minmax(7rem,1fr) 4fr;
+  grid-template-rows: 1fr;
+  cursor: pointer;
+}
+.main-menu-dashboard li:hover{
+  background-color: #393939;
+  cursor: pointer;
+}
+.main-menu-dashboard h1{
+  margin: 0 auto;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.main-menu-dashboard h2{
+  margin: auto 0;
+  font-size: 1.6rem;
+  color: #eee;
+}
+.main-menu-dashboard i{
+  font-size: 2.4rem;
+  color: #eee;
+  margin: auto auto;
+}
+.top-dashboard{
+  width: 25rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+.user-dashboard{
+  display: flex;
+  align-items: center;
+  width: 23rem;
+  height: 5rem;
+  background-color: #fff;
+}
+.user-circle{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #f27217;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.user-dash{
+  font-size: 2rem;
+  color: #fff;
+}
+.user-toggle{
+  font-size: 2rem;
+  color: #f27217;
+  margin-left: auto;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.top-dashboard h3{
+  font-size: 1.8rem;
+  color: #1a1a1a;
+}
+.top-dashboard h2{
+  font-size: 1.4rem;
+  color: rgb(64, 64, 64);
+}
+
+.top-submenu{
+  display: flex;
+  align-items: center;
+  width: 23rem;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+.top-submenu:hover{
+  background-color: #eee;
+}
+.top-submenu-contain{
+  position: absolute;
+  top: 5rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: all 0.8s linear;
+}
+.top-submenu-contain-show{
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+.dashboard-content{
+  grid-column: 2 / 3;
+  padding: 5rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+.dashboard-content h1{
+  color: #000;
+  font-size: 2.8rem;
+  grid-column: 1 / -1;
+}
+
+/* Dash board Profile */
+
+.Ewallet-contain{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+  padding: 3rem;
+  position: relative;
+}
+.e-wallet-circle{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f27217;
+  position: absolute;
+  right: 2rem;
+  top: -20%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+.e-wallet-circle i{
+  font-size: 4rem;
+  color: #fff;
+}
+.Ewallet-contain h2{
+  font-size: 2.4rem;
+  color: #707070;
+}
+.Ewallet-contain h3{
+  font-size: 5rem;
+  color: #ffa565;
+}
+.Investor-Profile{
+  padding: 3rem;
+  grid-column: 1 / -1;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+}
+.Investor-Profile div{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.Investor-Profile h2{
+  font-size: 2.4rem;
+  color: #f27217;
+  margin-bottom: 1rem;
+}
+.Investor-Profile h3{
+  font-size: 1.8rem;
+  color: #000;
+}
+.Investor-Profile p{
+  font-size: 1.8rem;
+  color: #7a7a7a;
+}
+.Tradingaccount-profile{
+  padding: 3rem;
+  grid-column: 1 / -1;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+}
+.Tradingaccount-profile h2{
+  font-size: 2.4rem;
+  color: #f27217;
+  margin-bottom: 1rem;
+}
+.trading-account-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.trading-account-contain-60{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.tradingaccount{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+  box-sizing: content-box;
+  padding: 2rem 0;
+}
+.tradingaccount-60{
+  width: 80%;
+}
+.tradingaccount li{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+}
+.Balance-contain{
+  background-color: #ffb480;
+}
+.tradingaccount h3{
+  font-size: 1.8rem;
+  color: #ff9144;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.tradingaccount h4{
+  font-size: 1.4rem;
+  color: #7a7a7a;
+}
+.tradingaccount h5{
+  font-size: 1.2rem;
+  color: #000;
+}
+/* end of Dash board Profile */
+
+/* Dash board Deposit */
+.deposit-contain{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+  padding: 3rem;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.circle-contain{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  top: -20%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+.depoisit-circle{
+  background-color: #00cfc1;
+}
+.withdraw-circle{
+  background-color: #f75590;
+}
+.deposit-contain i{
+  font-size: 4rem;
+  color: #fff;
+}
+.deposit-contain h2{
+  font-size: 2.4rem;
+  color: #707070;
+}
+.deposit-contain h3{
+  font-size: 5rem;
+  color: #ffa565;
+}
+.deposit-form-contain{
+  grid-column: 1 / -1;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3.5fr 1.5fr;
+  grid-gap: 2rem;
+}
+.deposit-rate-cal{
+  background-color: #161A26;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  border-radius: 1rem;
+}
+.deposit-rate-cal h1{
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+.deposit-rate-cal h2{
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+.deposit-rate-cal h3{
+  font-size: 2.4rem;
+  color: #ffb703;
+  margin: 1rem 0;
+}
+.deposit-rate-cal h4{
+  font-size: 1.8rem;
+  color: #f4c54f;
+  margin: 1rem 0;
+}
+.deposit-rate-cal div{
+  display: flex;
+  margin: 1rem 0;
+}
+.deposit-rate-cal input{
+  font-size: 2rem;
+  outline: none;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 0;
+  transition: all 0.5s ease-out;
+  color: #00b4d8;
+}
+.deposit-rate-cal input:focus{
+  background-color: #00b4d8;
+  color: #fff;
+}
+.deposit-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  padding: 3rem 0;
+  border-radius: 0.5rem;
+}
+.deposit-account h2{
+  font-size: 2.4rem;
+}
+.depoisit-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  padding: 2rem 0;
+}
+.depoisit-form h3{
+  font-size: 2.4rem;
+}
+.depoisit-form p{
+  font-size: 1.8rem;
+}
+.depoisit-form i{
+  font-size: 5rem;
+  color: #fb8500;
+}
+.img-deposit{
+  width: 20rem;
+  height: 20rem;
+  background-color: #9f9f9f;
+}
+.img-deposit img{
+  width: 100%;
+  object-fit: cover;
+}
+.depoisit-form div{
+  display: flex;
+}
+.depoisit-form button{
+  font-size: 2.4rem;
+  color: #eee;
+  width: 15rem;
+  height: 5rem;
+  margin: 1rem 5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.form-clear-button{
+  border: 0.1rem solid #ef476f;
+  background-color: #ef476f;
+}
+.form-clear-button:hover{
+  border: 0.1rem solid #ed7491;
+  background-color: #ed7491;
+}
+.form-deposit-button{
+  border: 0.1rem solid #4895ef;
+  background-color: #4895ef;
+}
+.form-deposit-button:hover{
+  border: 0.1rem solid #68a6ed;
+  background-color: #68a6ed;
+}
+/* end of Dash board Deposit */
+
+/* Tradingaccount */
+.Create-Newaccount-contain{
+  display: none;
+}
+.Create-Newaccount-contain-visible{
+  display: block;
+}
+.create-account{
+  color: #eee;
+  font-size: 1.8rem;
+  padding: 1.5rem 1.5rem;
+  border: 0.4rem solid #107acb;
+  background-color: #107acb;
+  border-radius: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.create-account{
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+  border: 0.2rem solid #00cfc1;
+  background-color: #00cfc1;
+  border-radius: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.create-account:hover{
+  color: #00cfc1;
+  border: 0.2rem solid #00cfc1;
+  background-color: #fff;
+}
+.head-trading-acoount{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Create-Newaccount-bg{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.9;
+  position: absolute;
+  z-index: 10;
+}
+.Create-Newaccount-contain2{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-account-contain{
+  width: 60%;
+  padding: 3rem 6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  position: relative;
+}
+.create-account-form{
+  display: flex;
+  flex-direction: column;
+}
+.create-account-contain h1{
+  font-size: 2.4rem;
+  color: #f27217;
+  margin: 1rem 0;
+}
+.create-account-contain h2{
+  font-size: 2rem;
+}
+.create-account-contain select{
+  font-size: 2rem;
+  width: 50%;
+  padding: 0.2rem;
+}
+.create-account-contain input{
+  font-size: 2rem;
+  width: 50%;
+  padding: 0.2rem;
+
+}
+.create-account-contain span{
+  font-size: 4rem;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 2rem;
+}
+.create-account-contain span:hover{
+  color: rgb(255, 130, 0);
+}
+.clover-img{
+  width: 40rem;
+  position: absolute;
+  right: 10% ;
+  top: 20%;
+}
+.clover-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.create-newaccount-btn{
+  align-self: center;
+  width: 80%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1.5rem 1.5rem;
+  border: 0.2rem solid #00cfc1;
+  background-color: #00cfc1;
+  border-radius: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  margin-top: 2rem;
+}
+.create-newaccount-btn:hover{
+  color: #00cfc1;
+  border: 0.2rem solid #00cfc1;
+  background-color: #fff;
+}
+/* end of Tradingaccount */
+
+/* Withdraw */
+.withdraw-account{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.bank-img{
+  grid-row: 1 / -1;
+  width: 15rem;
+  height: 15rem;
+  align-items: center;
+  padding: 1rem;
+}
+.bank-img img{
+  width: 100%;
+}
+.withdraw-account{
+  grid-column: 1/ -1;
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+}
+.withdraw-account h1{
+  font-size: 2.4rem;
+  grid-column: 2 / 3;
+}
+.withdraw-account-detail{
+  list-style: none;
+  margin: auto 0
+}
+.withdraw-account-detail li{
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+}
+.withdraw-contain{
+  grid-column: 1/ -1;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-shadow: 3px 2px 4px 2px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ebebeb;
+}
+.withdraw-contain h2{
+  color: #000;
+  font-size: 2.4rem;
+}
+.withdraw-contain h3{
+  color: #000;
+  font-size: 1.8rem;
+}
+.withdraw-contain input{
+  width: 40rem;
+  height: 4rem;
+  color: #000;
+  font-size: 2.4rem;
+  padding: 0.5rem;
+  border: 0.3rem solid #999999;
+  border-radius: 1rem;
+}
+.withdraw-btn{
+  width: 80%;
+  font-size: 1.8rem;
+  font-weight: normal;
+  border: 0.1rem solid #f27217;
+  color: #fff;
+  height: 4rem;
+  border-radius: 1.5rem;
+  background-color: #f27217;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.withdraw-btn:hover{
+  border: 0.1rem solid #f27217;
+  color: #f27217;
+  background-color: #fff;
+}
+.withdraw-form div{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* end of Withdraw */
+
+/* Transaction */
+.transaction-contain{
+  grid-column: 1 / -1;
+}
+.transaction-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+}
+.transaction-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+}
+.transaction-title h2{
+  padding: 1rem;
+  color: #242424;
+  text-align: center;
+  border-top: 3px solid #f27217;
+  font-size: 1.8rem;
+}
+.transaction-title div{
+  padding: 1rem;
+  color: #242424;
+  text-align: center;
+  border-top: 3px solid #f27217;
+  font-size: 1.8rem;
+}
+.transaction-list h3{
+  text-align: center;
+  padding: 1.5rem;
+  color: #535353;
+  border-top: 2px solid #f27217;
+  font-size: 1.8rem;
+}
+.img-transaction{
+  padding: 1rem;
+  color: #535353;
+  text-align: center;
+  border-top: 2px solid #f27217;
+  font-size: 1.8rem;
+}
+.img-transaction div{
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+}
+.img-transaction div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#Approved-transaction{
+  color: #00b147;
+}
+#Pending-transaction{
+  color: #04acd2;
+}
+#Ejected-transaction{
+  color: #ff4b4b;
+}
+/* end of Transaction */
+
+/* Expertadvisor */
+.dashboard-content h2{
+  font-size: 2rem;
+  color: #3c3c3c;
+}
+/* end of Expertadvisor */
+
+/* end of Dashboard */
